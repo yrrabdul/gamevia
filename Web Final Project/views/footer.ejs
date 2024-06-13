@@ -1,0 +1,55 @@
+
+<div id="footer-container" class="container-fluid bg-black">
+  <div id="footer" class="d-flex flex-row mx-5 p-5 justify-content-between">
+    <div id="first-footer-column" class="d-flex flex-column">
+      <h2 id="company-footer-text">GAMEVIA</h2>
+      <p id="footer-closing-description">
+        Take your skills to the next level in an ideal and fun environment.
+      </p>
+      <div id="footer-icons" class="d-flex flex-row justify-content-between">
+        <img width = "38px" height = "38px" src="public\css\landingPage-assets\instagram-128.png" alt="" />
+        <img width = "38px" height = "38px"src="./public/css/landingPage-assets/play-6-128.png" alt="" />
+        <img width = "38px" height = "38px"src="./public/css/landingPage-assets/steam-128.png" alt="" />
+      </div>
+    </div>
+    <div id="second-footer-column" class="d-flex flex-column justify-content-center justify-content-between justify-content-around">
+      <a href="landingPage.html"><strong>HOME</strong></a>
+      <a href="http://"><strong>Hehuha</strong></a>
+      <a href="services.html"><strong>SERVICES</strong></a>
+      <a href="http://"><strong>HEHE</strong></a>
+      <div id="technical-fields" class="d-flex flex-row justify-content-around">
+        <p>Community</p>
+        <p>Privacy</p>
+        <p>Terms</p>
+      </div>
+    </div>
+    <div id="third-footer-column" class="d-flex flex-column justify-content-center">
+      <img id="qr-code" src="public/css/landingPage-assets/qrcode.png" alt="" />
+      <div
+        
+        id="footer-social-icons"
+        class="d-flex flex-row justify-content-center justify-content-around "
+        style="margin-bottom: 0px;"
+      >
+        <img src="./public/css/landingPage-assets/whatsapp-32.png" alt="" />
+        <img src="./public/css/landingPage-assets/facebook-3-32.png" alt="" />
+        <img src="./public/css/landingPage-assets/twitter-3-32.png" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+<script>document.addEventListener("DOMContentLoaded", function() {
+  const mascotImage = document.querySelector(".image");
+
+  if (mascotImage) {
+    document.addEventListener("mousemove", (e) => {
+      const xAxis = (window.innerWidth / 2 - e.pageX) / 20;
+      const yAxis = (window.innerHeight / 2 - e.pageY) / 20;
+
+      mascotImage.style.transform = `translate(${xAxis}px, ${yAxis}px)`;
+    });
+  } else {
+    console.error("Element with class 'image' not found.");
+  }
+});</script>
+<footer><strong>Creator : </strong> Hassan Khalid</footer>

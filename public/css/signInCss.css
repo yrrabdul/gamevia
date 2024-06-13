@@ -1,0 +1,91 @@
+*
+{
+    font-family: 'Kanit';
+}
+
+
+
+body{
+    background-image: url("../landingPage-assets/bg3.png");
+    background-size: cover;
+}
+
+#welcome-title
+{
+    font-family: 'Climate Crisis';
+    font-size: 75px;
+    padding-top: 30%;
+}
+
+#welcoming-text
+{
+    color: white;
+
+}
+
+#second-main-column
+{
+    margin-top: 7%;
+}
+
+#sign-in-container
+{
+    border-radius: 25px;
+    background-color: white;
+    padding: 50px;
+    border: 10px;
+    border-color: #7315E5;
+}
+
+#sign-in-title
+{
+
+    font-family: 'Climate Crisis';
+    font-size: 2rem;
+    color: #7315E5
+}
+
+#sign-in-button
+{
+    background-color: #7315E5;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 15%;
+    color: white;
+    height: 50px;
+}
+
+#controller-image
+{
+    float:right;
+}
+
+#welcome-description
+{
+    width: 350px;
+    margin-left: 10px;
+    margin-top: 55px;
+}
+
+.success
+{
+    border: 3px solid green;
+    border-radius: 10px;
+
+}
+
+@keyframes shakeIt
+{
+    0%{right:10px;}
+    50%{right: -10px;}
+    100%{right:0px;}
+}
+
+.error
+{
+    border: 3px solid red;
+    border-radius: 10px;
+    animation-name: shakeIt;
+    animation-duration: .5s;
+}
+

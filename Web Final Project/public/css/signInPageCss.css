@@ -1,0 +1,90 @@
+* {
+  font-family: "Kanit";
+  color: rgba(255, 255, 255, 0.911);
+}
+
+body {
+  background-image: url("./assets/signInbg.jpg");
+  background-size: cover;
+  background-color: #636161;
+}
+
+#welcome-title {
+  font-family: "Climate Crisis";
+  font-size: 75px;
+  padding-top: 40%;
+}
+
+#welcoming-text {
+  color: white;
+}
+
+#second-main-column {
+  margin-top: 10%;
+}
+
+#sign-in-container {
+  border-radius: 25px;
+  background-color: #302f2f;
+  padding: 70px;
+  border: 0px;
+  border-color: #7530c9;
+}
+
+#sign-in-title {
+  font-family: "Climate Crisis";
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+#sign-in-button {
+  background-color: red;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 15%;
+  color: white;
+  height: 50px;
+}
+
+#controller-image {
+  float: right;
+}
+
+#welcome-description {
+  width: 350px;
+  margin-left: 10px;
+  margin-top: 55px;
+}
+
+.success {
+  border: 3px solid green;
+  border-radius: 10px;
+}
+
+@keyframes shakeIt {
+  0% {
+    right: 10px;
+  }
+  50% {
+    right: -10px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+.error {
+  border: 3px solid red;
+  border-radius: 10px;
+  animation-name: shakeIt;
+  animation-duration: 0.5s;
+}
+.sign-in-line {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 21px;
+}
+
+.log-in-link {
+  margin-left: 5px;
+}

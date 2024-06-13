@@ -1,0 +1,275 @@
+* {
+  font-family: "Kanit";
+}
+
+body {
+  background-image: url("./assets/servicesBackground.jpg");
+}
+#navigation_bar {
+  width: 96%;
+  align-items: center;
+
+  border-radius: 0;
+}
+
+#logo-button,
+#menu-button {
+  color: white;
+  border-radius: 20px;
+  height: 65px;
+}
+
+#logo-button {
+  color: white;
+  font-family: "Climate Crisis";
+  background-color: rgb(25, 25, 25);
+}
+
+#logo-button:hover {
+  background-color: black;
+}
+
+#middle-bar {
+  border-radius: 20px;
+  height: 65px;
+  padding-top: 11.5px;
+  background-color: rgb(25, 25, 25);
+}
+
+#middle-bar button {
+  height: 40px;
+  width: 100px;
+  font-size: small;
+  border-radius: 12px;
+  color: white;
+}
+
+#middle-bar button:hover {
+  background-color: purple;
+}
+
+#menu-button {
+  width: 150px;
+  background-color: rgba(25, 25, 25, 0.938);
+  padding-top: 1rem;
+  font-size: large;
+}
+
+#menu-image {
+  width: 16px;
+}
+
+#first-container {
+  height: 40rem;
+  background-color: black;
+  color: white;
+  background: transparent;
+}
+
+#first-container-first-column {
+  margin-top: 2%;
+  margin-bottom: 3%;
+  margin-left: 10%;
+  width: 50%;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: rgb(115, 21, 229);
+  border-radius: 25px;
+}
+
+#intro-text-description {
+  padding-top: 65px;
+  font-size: 42px;
+}
+
+#first-container-second-column {
+  margin-left: 25%;
+}
+
+#created-games {
+  height: 60px;
+  border-radius: 25px;
+}
+
+#mascot-img {
+  background-image: url("./assets/mascot.png");
+  background-repeat: no-repeat;
+  height: 350px;
+  justify-content: center;
+  margin-left: 35%;
+}
+#our-clients {
+  background-color: rgba(36, 33, 33, 0.726);
+  margin-top: 75px;
+  height: 15rem;
+  border-radius: 25px;
+  color: white;
+  padding-top: 50px;
+}
+/* Add this CSS to style the tournament cards */
+.tournament-card {
+  background-color: #343a40; /* Set the background color */
+  border-radius: 15px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+}
+
+.tournament-card:hover {
+  transform: scale(1.05); /* Scale the card on hover */
+}
+
+.tournament-card h2 {
+  font-family: "Kanit", sans-serif; /* Use the Kanit font for the title */
+}
+
+.tournament-image-container {
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.tournament-image {
+  border-radius: 10px; /* Add rounded corners to the image */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.service-description p {
+  margin: 5px 0; /* Add some margin between paragraphs in the description */
+}
+/* Add this CSS to style the registration form */
+.registration-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+/* Style the form elements */
+.registration-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style the close button (optional) */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+#ea-icon {
+  width: 75px;
+}
+
+#ep-icon {
+  width: 64px;
+}
+
+#line {
+  width: 25%;
+}
+
+#services-container {
+  background-color: rgb(48, 45, 45);
+  margin-top: 75px;
+  background-image: url("./assets/keyboard.png");
+}
+
+#service-list-row div {
+  background-color: rgb(46, 42, 42);
+  border-radius: 25px;
+}
+
+#service-list-row img {
+  /* width: 64px;
+    margin-top: 50px;
+    margin-left: 35%; */
+}
+
+.service-description {
+  margin-top: 50px;
+}
+
+#bf-img,
+#cod-img,
+#hs-img {
+  width: inherit;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+#bf-img {
+  background-color: aquamarine;
+}
+
+#footer {
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  height: 30rem;
+  background-color: rgb(25, 25, 25);
+  border-radius: 25px;
+}
+
+#footer-container {
+  background-color: rgb(25, 25, 25);
+  height: 36rem;
+  margin-top: 20px;
+  padding-top: 3rem;
+}
+
+#first-footer-column {
+  margin-right: 125px;
+}
+
+#company-footer-text {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: "Climate Crisis";
+}
+
+#footer-closing-description {
+  width: 250px;
+}
+
+#footer-icons {
+  width: 200px;
+  padding-top: 190px;
+}
+
+#second-footer-column,
+#third-footer-column {
+  padding-top: 25px;
+  width: 300px;
+}
+
+#second-footer-column a {
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+}
+
+#technical-fields {
+  margin-top: 190px;
+}
+
+#qr-code {
+  width: 128px;
+}
+
+#footer-social-icons {
+  margin-top: 190px;
+  width: 200px;
+}
+
+footer {
+  background-color: rgb(115, 21, 229);
+  color: white;
+  padding-left: 90px;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamitron</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/css/servicesPageCss.css" />
+  </head>
+  <body>
+    <div
+      id="navigation_bar"
+      class="py-4 container-fluid d-flex justify-content-between sticky-top"
+    >
+      <button id="logo-button" type="button" class="btn btn-lg">Gamevia</button>
+
+      <div id="middle-bar" class="row px-1 mt-0">
+        <div class="col">
+          <button
+            onclick="document.location='#first-container'"
+            class="btn btn-lg mt-0"
+          >
+            ABOUT
+          </button>
+        </div>
+        <div class="col">
+          <button
+            onclick="document.location='#services-container'"
+            class="btn btn-lg mt-0"
+          >
+            SERVICES
+          </button>
+        </div>
+        <div class="col">
+          <button onclick="document.location='#footer'" class="btn btn-lg mt-0">
+            CONTACT
+          </button>
+        </div>
+        <!-- <div class="col">
+                <button id="hang-out" class="btn btn-lg mt-0">HANG OUT</button>
+            </div> -->
+      </div>
+
+      <button
+        id="menu-button"
+        type="button"
+        class="btn btn-lg d-flex justify-content-around"
+      >
+        Menu
+        <div id="menu-img-holder">
+          <img
+            id="menu-image"
+            src="./public/css/landingPage-assets/menu-32px.png"
+            alt=""
+          />
+        </div>
+      </button>
+    </div>
+    <div
+      id="first-container"
+      class="d-flex flex-row pt-5 justify-content-around"
+    >
+      <div id="first-container-first-column" class="d-flex flex-column">
+        <p id="intro-text-description">
+          <strong
+            >Hosting the best tournaments for our users since 2023.</strong
+          >
+        </p>
+        <button
+          id="created-games"
+          class="btn btn-lg mt-5 bg-light"
+          onclick='window.location.href = "/games"'
+        >
+          Games We've Hosted
+        </button>
+      </div>
+      <div id="first-container-second-column" class="container">
+        <img
+          src="public/css/landingPage-assets/mascot.png"
+          alt=""
+          id="gamer-image"
+        />
+      </div>
+    </div>
+
+    <div id="our-clients" class="container d-flex flex-column text-center">
+      <h1>Our Clients</h1>
+      <div id="client-list" class="d-flex flex-row justify-content-around mt-4">
+        <img id="ep-icon" src="public/css/landingPage-assets/ep.svg" alt="" />
+        <img
+          id="ea-icon"
+          src="public/css/landingPage-assets/ea-64.png"
+          alt=""
+        />
+        <img
+          id="roblox-icon"
+          src="public/css/landingPage-assets/c-sharp.png"
+          alt=""
+        />
+        <img
+          src="public/css/landingPage-assets/ubisoft.png"
+          alt=""
+          id="ubisoft-icon"
+        />
+      </div>
+    </div>
+
+    <div id="services-container" class="container-fluid d-flex flex-column">
+      <div id="services-title" class="container text-center pt-5">
+        <h2 style="color: white">Tournaments</h2>
+        <div id="line" class="container bg-black pt-2 text-center"></div>
+        <div id="service-list-row" class="container d-flex flex-row pt5 mt5">
+          <!-- Tournaments Section -->
+<!-- Tournaments Section -->
+<% tournaments.forEach(tournament => { %>
+    <div class="container d-flex flex-column m-5 p-5 text-center tournament-card">
+      <h2 class="text-white"><%= tournament.title %></h2>
+      <div class="tournament-image-container">
+        <img src="<%= tournament.image %>" alt="<%= tournament.title %>" class="tournament-image" />
+      </div>
+      <div class="service-description text-white">
+        <p><strong>Date:</strong> <%= new Date(tournament.date).toLocaleDateString('en-US', { timeZone: 'Asia/Karachi' }) %></p>
+        <p><strong>Time:</strong> <%= tournament.time %></p>
+        <p><strong>Genre:</strong> <%= tournament.genre %></p>
+  
+        <!-- Registration Button -->
+        <button class="btn btn-primary btn-block add-btn mx-3 my-5 register-button">Tournament Registration</button>
+  
+        <!-- Registration Form (Initially Hidden) -->
+        <div class="registration-form" style="display: none;">
+          <form action="/register-tournament" method="post">
+            <input type="hidden" name="tournamentId" value="<%= tournament._id %>" />
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <button type="submit">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  <% }); %>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./footer') %>
+  </body>
+  <script>
+      document.addEventListener('DOMContentLoaded', function () {
+  // Get all register buttons
+  const registerButtons = document.querySelectorAll('.register-button');
+
+  // Add click event listener to each register button
+  registerButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      // Toggle the visibility of the registration form
+      const form = this.nextElementSibling;
+      form.style.display = (form.style.display === 'none' || form.style.display === '') ? 'block' : 'none';
+    });
+  });
+});
+
+  </script>
+</html>

@@ -1,0 +1,249 @@
+*
+{
+    font-family: 'Kanit';
+}
+   
+
+#navigation_bar
+{
+    width: 96%;
+    align-items: center;
+    background-color: transparent;
+}
+
+#logo-button, #menu-button
+{
+
+    color: white;
+    border-radius: 20px;
+    height: 65px;
+}
+
+#logo-button
+{
+    color:white;
+    font-family: 'Climate Crisis';
+    background-color: rgb(25, 25, 25);
+}
+
+#logo-button:hover
+{
+    background-color: black;
+}
+
+#middle-bar
+{
+    border-radius: 20px;
+    height: 65px;
+    padding-top: 11.5px;
+    background-color: rgb(25, 25, 25);
+}
+
+#middle-bar button
+{
+    height: 40px;
+    width: 100px;
+    font-size: small;
+    border-radius: 12px;
+    color: white;
+}
+
+#middle-bar button:hover
+{
+    background-color: black;
+}
+
+
+#menu-button
+{
+    width: 150px;
+    background-color: rgb(25, 25, 25);
+    padding-top: 1rem;
+    font-size: large;
+}
+
+#menu-image
+{
+    width: 16px;
+}
+
+
+/* #first-container
+{
+    height: 40rem;
+    background-color: black;
+    color: white;
+    background-image: url(../landingPage-assets/graph2.jpg);
+}
+
+
+
+#first-container-first-column
+{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgb(115, 21, 229);
+    border-radius: 25px;
+}
+
+#intro-text-description
+{
+    padding-top: 65px;
+    font-size: 42px;
+}
+
+#first-container-second-column
+{
+    margin-left: 25%;
+}
+
+#created-games
+{
+    height: 60px;
+    border-radius: 25px;
+}
+
+
+#our-clients
+{
+    background-color: rgb(218, 213, 213);
+    margin-top: 75px;
+    height: 15rem;
+    border-radius: 25px;
+    color: white;
+    padding-top: 50px;;
+}
+
+#ea-icon
+{
+    width: 75px;
+}
+
+#ep-icon
+{
+    width: 64px;
+}
+
+
+#line
+{
+    width: 25%;
+}
+
+#services-container
+{
+    background-color: rgb(115, 21, 229);
+    margin-top: 75px;
+}
+
+#service-list-row div
+{
+    background-color: white;
+    border-radius: 25px;
+
+}
+
+#service-list-row img
+{
+    width: 64px;
+    margin-top: 50px;
+    margin-left: 35%;
+}
+
+.service-description
+{
+    margin-top: 50px;
+}
+
+#bf-img, #cod-img, #hs-img
+{
+    width: inherit;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+#bf-img
+{
+    background-color: aquamarine;
+} */
+
+#footer
+{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    height: 30rem;
+    background-color: rgb(25, 25, 25);
+    border-radius: 25px;
+}
+
+#footer-container
+{
+    background-color: rgb(25, 25, 25);
+    height: 36rem;
+    margin-top: 20px;
+    padding-top: 3rem;
+}
+
+#first-footer-column
+{
+    margin-right: 125px;
+}
+
+#company-footer-text
+{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: 'Climate Crisis';
+}
+
+#footer-closing-description
+{
+    width: 250px;
+}
+
+#footer-icons
+{
+    width: 200px;
+    padding-top: 190px;
+}
+
+#second-footer-column, #third-footer-column
+{
+    padding-top: 25px;
+    width: 300px;
+}
+
+#second-footer-column a
+{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+}
+
+#technical-fields
+{
+    margin-top: 190px;
+}
+
+#qr-code
+{
+    width: 128px;
+}
+
+#footer-social-icons
+{
+    margin-top: 190px;
+    width: 200px;
+}
+
+footer
+{
+    background-color: rgb(115, 21, 229);
+    color: white;
+    padding-left: 90px;
+}
